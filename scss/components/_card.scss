@@ -1,0 +1,69 @@
+// ========================== //
+//           CARD             //
+// ========================== //
+
+@use "../base" as *;
+@use "sass:map";
+
+//--CARD----//
+/*--START CARD--------------------*/
+.card {
+  @include grid($gap: $ss-5);
+  margin: $ss-6;
+  padding: $ss-5 $ss-5 $ss-8;
+  background-image: radial-gradient(circle at 50% -50%,
+      $theme-neutral-400,
+      $theme-neutral-600 );
+  border-radius: $ss-6;
+  box-shadow: $shadow-diffuse;
+
+  &--rate {
+    &>.card__image {
+      width: 42px;
+      height: 42px;
+      background-color: $theme-neutral-400;
+      border-radius: 50%;
+
+      @include mq(min, md) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  &--thank {
+    @include flex();
+    text-align: center;
+  }
+
+  &__image {
+    @include flex();
+  }
+
+  &__rating {
+    display: flex;
+    gap: $ss-6;
+    justify-content: center;
+  }
+
+  &__title {
+    @include font-style(h4, bold, xs);
+    color: $theme-neutral-100;
+  }
+
+  &__text {
+    @include font-style(sm, regular, base);
+    color: $theme-neutral-200;
+  }
+
+  &__selected {
+    width: max-content;
+    padding: $ss-2;
+    color: $theme-primary-100;
+    background-color: $theme-neutral-400;
+    border-radius: $ss-5;
+    @include font-style(base, bold);
+  }
+}
+
+/*--END CARD--------------------*/

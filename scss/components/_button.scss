@@ -1,0 +1,59 @@
+// ========================== //
+//          BUTTON            //
+// ========================== //
+
+@use "../base" as *;
+@use "sass:map";
+
+//--BUTTON----//
+/*--START BUTTON--------------------*/
+.btn {
+  cursor: pointer;
+  color: $theme-neutral-100;
+  text-transform: uppercase;
+  @include flex(null);
+  @include font-style(15, regular);
+
+  &--option {
+    width: 42px;
+    height: 42px;
+    color: $theme-neutral-200;
+    background-color: $theme-neutral-400;
+    border-radius: 50%;
+    transition: background-color 0.3s linear;
+
+    @include mq(min, md) {
+      width: 50px;
+      height: 50px;
+    }
+
+    &:hover {
+      color: $theme-neutral-100;
+      background-color: $theme-neutral-200;
+
+      &.btn--selected {
+        background-color: $theme-primary-100;
+      }
+    }
+  }
+
+  &--primary {
+    padding: $ss-3;
+    letter-spacing: 1px;
+    background-color: $theme-primary-100;
+    border-radius: $ss-5;
+    transition: background-color 0.3s linear, color 0.3s linear;
+
+    &:hover {
+      color: $theme-primary-100;
+      background-color: $theme-neutral-100;
+    }
+  }
+
+  &--selected {
+    color: $theme-neutral-100;
+    background-color: $theme-primary-100;
+  }
+}
+
+/*--END BUTTON--------------------*/

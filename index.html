@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link type="image/png" href="./images/favicon-32x32.png" rel="icon" sizes="32x32">
+    <link href="/dist/styles.css" rel="stylesheet">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body class="page">
+    <!-- START MAIN -->
+    <main class="page__main">
+      <!-- CARD RATE -->
+      <div class="card card--rate">
+        <!-- CARD IMAGE -->
+        <div class="card__image">
+          <img src="images/icon-star.svg" alt="Star">
+        </div>
+        <!-- CARD TITLE -->
+        <h1 class="card__title">How did we do?</h1>
+        <!-- CARD TEXT -->
+        <p class="card__text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <!-- CARD RATING -->
+        <div class="card__rating">
+          <button class="btn btn--option" type="button">1</button>
+          <button class="btn btn--option" type="button">2</button>
+          <button class="btn btn--option" type="button">3</button>
+          <button class="btn btn--option" type="button">4</button>
+          <button class="btn btn--option" type="button">5</button>
+        </div>
+        <!-- BUTTON -->
+        <button class="btn btn--primary" id="submit" type="submit">
+          Submit
+        </button>
+      </div>
+      <!-- CARD RATE -->
+
+      <!-- CARD THANKS YOU -->
+      <div class="card card--thank h-hide">
+        <!-- CARD IMAGE -->
+        <div class="card__image">
+          <img src="images/illustration-thank-you.svg" alt=" Thank You">
+        </div>
+        <!-- CARD RATED -->
+        <p class="card__selected">
+          You selected <span id="option"></span> out of 5
+        </p>
+        <!-- CARD TITLE -->
+        <h1 class="card__title">Thank you!</h1>
+        <!-- CARD TEXT -->
+        <p class="card__text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+      <!-- END CARD THANKS YOU -->
+    </main>
+    <!-- END MAIN -->
+
+    <!-- START FOOTER -->
+    <footer class="footer">
+      <!--FOOTER ATTRIBUTION -->
+      <p class="footer__attribution">
+        Challenge by
+        <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" rel="noopener" target="_blank">Frontend Mentor</a>. Coded by
+        <a class="footer__link" href="https://www.frontendmentor.io/profile/Barcaca" rel="noopener" target="_blank">Luan Barcaça</a>.
+      </p>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>

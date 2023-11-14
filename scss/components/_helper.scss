@@ -1,0 +1,16 @@
+// ========================== //
+//          HELPER            //
+// ========================== //
+
+@use "../base" as *;
+@use "sass:map";
+
+/*--START HELPER--------------------*/
+.h-hide {
+  display: none;
+}
+
+.h-show {
+  display: block;
+}
+/*--END HELPER--------------------*/
