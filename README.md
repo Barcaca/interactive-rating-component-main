@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Interactive Rating Component/Frontier Mentor](https://www.frontendmentor.io/solutions/testimonials-grid-section-sassscss-cZz6EmFQ0Z)
-- Live Site URL: [Vercel App](https://testimonials-grid-section-main-seven-sandy.vercel.app)
+- Solution URL: [Interactive Rating Component/Frontier Mentor](https://www.frontendmentor.io/solutions/interactive-rating-component-sassscss-ENpUgZGQIH)
+- Live Site URL: [Vercel App](https://interactive-rating-component-main-lilac-omega.vercel.app)
 
 ## My process
 
